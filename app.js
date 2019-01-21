@@ -56,10 +56,10 @@ shell(async answers => {
       domain
     }
   ];
-  await page.setViewport({
-    width: 1180,
-    height: 600
-  });
+  // await page.setViewport({
+  //   width: 1180,
+  //   height: 600
+  // });
   await page.setCookie(...cookies);
   await page.goto(`https://${domain}/FHM_car300/storeAudit/insertCustomer.do`);
 
